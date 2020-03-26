@@ -59,6 +59,10 @@ static struct {
 		.cmd	= ETHTOOL_MSG_EEE_NTF,
 		.cb	= eee_reply_cb,
 	},
+	{
+		.cmd	= ETHTOOL_MSG_FEC_NTF,
+		.cb	= fec_reply_cb,
+	},
 };
 
 static void clear_filter(struct nl_context *nlctx)
@@ -157,6 +161,10 @@ static struct monitor_option monitor_opts[] = {
 	{
 		.pattern	= "--show-eee|--set-eee",
 		.cmd		= ETHTOOL_MSG_EEE_NTF,
+	},
+	{
+		.pattern	= "--show-fec|--set-fec",
+		.cmd		= ETHTOOL_MSG_FEC_NTF,
 	},
 };
 

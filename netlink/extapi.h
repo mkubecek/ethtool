@@ -32,6 +32,8 @@ int nl_gpause(struct cmd_context *ctx);
 int nl_spause(struct cmd_context *ctx);
 int nl_geee(struct cmd_context *ctx);
 int nl_seee(struct cmd_context *ctx);
+int nl_gfec(struct cmd_context *ctx);
+int nl_sfec(struct cmd_context *ctx);
 int nl_monitor(struct cmd_context *ctx);
 
 void nl_monitor_usage(void);
@@ -68,6 +70,8 @@ static inline void nl_monitor_usage(void)
 #define nl_spause		NULL
 #define nl_geee			NULL
 #define nl_seee			NULL
+#define nl_gfec			NULL
+#define nl_sfec			NULL
 
 #endif /* ETHTOOL_ENABLE_NETLINK */
 

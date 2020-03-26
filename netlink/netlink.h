@@ -72,6 +72,7 @@ int channels_reply_cb(const struct nlmsghdr *nlhdr, void *data);
 int coalesce_reply_cb(const struct nlmsghdr *nlhdr, void *data);
 int pause_reply_cb(const struct nlmsghdr *nlhdr, void *data);
 int eee_reply_cb(const struct nlmsghdr *nlhdr, void *data);
+int fec_reply_cb(const struct nlmsghdr *nlhdr, void *data);
 
 /* dump helpers */
 

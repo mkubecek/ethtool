@@ -5449,11 +5449,13 @@ static const struct option args[] = {
 	{
 		.opts	= "--show-fec",
 		.func	= do_gfec,
+		.nlfunc	= nl_gfec,
 		.help	= "Show FEC settings",
 	},
 	{
 		.opts	= "--set-fec",
 		.func	= do_sfec,
+		.nlfunc	= nl_sfec,
 		.help	= "Set FEC settings",
 		.xhelp	= "		[ encoding auto|off|rs|baser [...]]\n"
 	},
